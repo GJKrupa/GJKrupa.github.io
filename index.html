@@ -2,17 +2,34 @@
 layout: default
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+<div class="row">
+    <div class="col-sm-12">
+        <div class="jumbotron">
+            <h1 class="display-3">{{ site.name }}</h1>
+            <p class="lead">{{ site.description }}</p>
+            
+        </div>
+    </div>
+</div>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
+<div class="row">
+    <div class="col-sm-12">
+        {% for post in site.posts %}
+        <div class="card">
+            <h3 class="card-header">
+                <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                {% if post.subtitle %}
+                - <small>{{ post.subtitle }}</small>
+                {% endif %}
+            </h3>
+            <div class="card-block">
+                <p class="card-text">{{ post.excerpt }}</p>
+                <a href="{{ site.baseurl }}{{ post.url }}" class="btn btn-primary">Read More</a>        
+            </div>
+            <div class="card-footer text-muted">
+                    {{ post.date | date: "%B %e, %Y" }}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
 </div>

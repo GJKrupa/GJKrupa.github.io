@@ -1,7 +1,12 @@
 ---
 layout: post
 title: First Post
+subtitle: Not the second post
 ---
-# First Post
-## Not the second post
-First post to verify that GitHub Pages is up-and-running.
+
+## What this is
+First post
+
+## Why it's hete
+to verify that GitHub Pages is up-and-running.
+

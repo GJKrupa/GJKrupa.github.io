@@ -1,4 +1,4 @@
-title: Gerard Krupa
+name: Gerard Krupa
 description: Java/Scala/Groovy/JS/Python Dev
 avatar: https://avatars0.githubusercontent.com/u/5756726?s=460&v=4
 disqus: uxian
@@ -20,7 +20,7 @@ kramdown:
 
 # Set the Sass partials directory, as we're using @imports
 sass:
-  style: :expanded # You might prefer to minify using :compressed
+  style: :compressed # You might prefer to minify using :compressed
 
 footer-links:
   dribbble:
